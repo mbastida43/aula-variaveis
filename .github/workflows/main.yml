@@ -23,7 +23,7 @@ jobs:
           echo "$ENV_WORKFLOW"
           echo "$ENV_JOB"
           echo "$ENV_ACTION"
-  test-env:
+  test-env-2:
     runs-on: ubuntu-latest
     env:
       ENV_JOB: "Valor JOB teste-env"
