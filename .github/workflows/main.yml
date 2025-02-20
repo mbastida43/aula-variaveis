@@ -7,9 +7,12 @@ jobs:
   test-env:
     runs-on: ubuntu-latest
     env:
-      ENV_WORKFLOW: "Valor JOB teste-env"
+      ENV_JOB: "Valor JOB teste-env"
     steps:
       - name: Execução
+        env:
+          ENV_ACTION: "Valor ACTION - Execução"
         run: |
-          echo "Valor XPTO"
-    
+          echo "$ENV_WORKFLOW"
+          echo "$ENV_JOB"
+          echo "$ENV_ACTION"
