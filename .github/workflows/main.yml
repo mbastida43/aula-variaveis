@@ -1,4 +1,4 @@
-name: commo usar variaveis de ambiente
+name: Como usar variaveis de ambiente
 on:
   workflow_dispatch: 
 env:
