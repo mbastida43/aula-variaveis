@@ -1,9 +1,13 @@
 name: commo usar variaveis de ambiente
 on:
   workflow_dispatch: 
+env:
+  ENV_WORKFLOW: "Valor WORKFRLOW"
 jobs:
-  env:
+  test-env:
     runs-on: ubuntu-latest
+    env:
+      ENV_WORKFLOW: "Valor JOB teste-env"
     steps:
       - name: Execução
         run: |
